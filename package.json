@@ -1,0 +1,12 @@
+{
+  "name": "file-splitter-296a4d",
+  "version": "1.0.0",
+  "description": "A file splitter utility",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js"
+  },
+  "keywords": ["file-splitter", "utility"],
+  "license": "MIT"
+}
