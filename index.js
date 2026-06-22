@@ -1,5 +1,5 @@
 'use strict';
-const COMP = 'file-splitter-cbcd8a';
+const COMP = 'file-splitter-44eb5f';
 const _state = new WeakMap();
 class Component {
   constructor(name) { _state.set(this, { name, created: Date.now(), updates: 0 }); }
